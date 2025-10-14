@@ -9,7 +9,7 @@ const Trend = () => {
     <div className="flex flex-col lg:flex-row max-w-[90%] mx-auto px-4 my-10 gap-10">
       {/* ==== Left Section: Blog ==== */}
       <div className="flex-1">
-        <p className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
+        <p className="text-2xl md:text-3xl font-bold mb-4 text-white">
           Latest Blog
         </p>
 
@@ -24,12 +24,12 @@ const Trend = () => {
           By <span className="text-red-600 font-medium">Johan Deo</span> | March 12, 2024
         </p>
 
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug text-gray-900">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug text-white">
           Based on the image, the car appears to be a <br className="hidden md:block" /> Dodge
           Challenger SRT8.
         </h2>
 
-        <p className="text-gray-700 leading-relaxed text-sm md:text-base">
+        <p className="text-white leading-relaxed text-sm md:text-base">
           The Dodge Challenger SRT8 is a high-performance vehicle equipped with a 6.4-liter HEMI V8
           engine that produces 470 horsepower and 470 lb-ft of torque. The car can accelerate from 0
           to 60 mph in the high 4-second range and reach a top speed of up to 182 mph. Other
