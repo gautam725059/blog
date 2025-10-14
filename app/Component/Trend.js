@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 import car2 from "../assest/image/car2.jpeg";
 import ad from "../assest/image/ad.jpg";
-import ad2 from "../assest/image/ad2.jpeg"
+import ad2 from "../assest/image/car2.jpeg"; // replace this with another ad image
 
 const Trend = () => {
   return (
     <div className="flex flex-col lg:flex-row max-w-[90%] mx-auto px-4 my-10 gap-10">
       {/* ==== Left Section: Blog ==== */}
       <div className="flex-1">
-        <p className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+        <p className="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
           Latest Blog
         </p>
 
@@ -24,12 +24,12 @@ const Trend = () => {
           By <span className="text-red-600 font-medium">Johan Deo</span> | March 12, 2024
         </p>
 
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug text-gray-800">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 leading-snug text-gray-900">
           Based on the image, the car appears to be a <br className="hidden md:block" /> Dodge
           Challenger SRT8.
         </h2>
 
-        <p className="text-gray-900 leading-relaxed text-sm md:text-base">
+        <p className="text-gray-700 leading-relaxed text-sm md:text-base">
           The Dodge Challenger SRT8 is a high-performance vehicle equipped with a 6.4-liter HEMI V8
           engine that produces 470 horsepower and 470 lb-ft of torque. The car can accelerate from 0
           to 60 mph in the high 4-second range and reach a top speed of up to 182 mph. Other
@@ -75,7 +75,7 @@ const Trend = () => {
           {/* Ad Text & CTA */}
           <div className="absolute bottom-6 left-0 w-full text-center px-4">
             <p className="text-white text-base md:text-lg font-semibold mb-2 drop-shadow">
-              Get the best  deals of 2025 🚗
+              Get the best car deals of 2025 🚗
             </p>
             <button className="bg-red-500 hover:bg-red-600 text-white text-sm md:text-base font-semibold px-6 py-2 rounded-full transition shadow-md">
               Learn More
@@ -98,7 +98,7 @@ const Trend = () => {
 
           <div className="absolute bottom-4 left-0 w-full text-center px-4">
             <p className="text-white text-sm md:text-base font-medium mb-2 drop-shadow">
-              Discover new new laptop 
+              Discover new car accessories 🛠️
             </p>
             <button className="bg-blue-500 hover:bg-blue-600 text-white text-xs md:text-sm font-semibold px-5 py-2 rounded-full transition">
               Shop Now
