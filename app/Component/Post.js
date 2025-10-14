@@ -35,7 +35,7 @@ const Post = () => {
   return (
     <div className="bg-gray-100 min-h-screen w-full py-10">
       <div className="max-w-[90%] mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-black md:text-left">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-gray-800 md:text-left">
           All Posts
         </h2>
 
