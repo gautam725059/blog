@@ -1,8 +1,9 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import car2 from "../assest/image/car2.jpeg";
 import ad from "../assest/image/ad.jpg";
-import ad2 from "../assest/image/ad2.jpeg" 
+import ad2 from "../assest/image/ad2.jpeg";
 
 const Trend = () => {
   return (
