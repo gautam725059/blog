@@ -75,7 +75,7 @@ const Post = () => {
             </div>
 
             <button
-              
+              onClick={() => router.push("/post2")}
               className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 text-sm md:text-base rounded-md font-medium self-start mt-4 transition-all"
             >
               Read full article...
@@ -108,7 +108,7 @@ const Post = () => {
             </div>
 
             <button
-              
+              onClick={() => router.push("/post3")}
               className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 text-sm md:text-base rounded-md font-medium self-start mt-4 transition-all"
             >
               Read full article...
