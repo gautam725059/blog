@@ -16,9 +16,10 @@ const Hedear = () => {
       </div>
 
       {/* Desktop Menu */}
+      <div className="flex gap-5 items-center">
       <ul className="hidden md:flex space-x-6">
         <li>
-          <a href="#home" className="hover:text-orange-400 transition">
+          <a href="#Home" className="hover:text-orange-400 transition">
             Home
           </a>
         </li>
@@ -27,11 +28,11 @@ const Hedear = () => {
             Blog
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#about" className="hover:text-orange-400 transition">
             About
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="#contact" className="hover:text-orange-400 transition">
             Contact
@@ -43,6 +44,7 @@ const Hedear = () => {
       <button className="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded transition">
         Subscribe
       </button>
+      </div>
 
       {/* Mobile Menu Toggle */}
       <button
@@ -69,13 +71,7 @@ const Hedear = () => {
           >
             Blog
           </a>
-          <a
-            href="#about"
-            className="block hover:text-orange-400 transition"
-            onClick={() => setMenuOpen(false)}
-          >
-            About
-          </a>
+          
           <a
             href="#contact"
             className="block hover:text-orange-400 transition"

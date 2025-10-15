@@ -4,6 +4,7 @@ import dodge2 from "../assest/image/dodge2.jpeg"
 
 const Home = () => {
   return (
+    <sections id="#Home">
     <div className="relative w-full h-170 overflow-hidden">
       <Image
         src={dodge2}
@@ -27,6 +28,7 @@ const Home = () => {
         </button>
       </div>
     </div>
+    </sections>
   );
 };
 

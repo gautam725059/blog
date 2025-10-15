@@ -60,14 +60,14 @@ const Trend = () => {
           {/* Sponsored Tag */}
           <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
             Sponsored
-          </span>
+          </span> 
 
           {/* Ad Buttons */}
           <div className="absolute top-3 right-3 flex gap-2">
-            <button className="p-1.5 rounded-full bg-white/90 text-blue-500 hover:bg-blue-500 hover:text-white border border-blue-400 transition">
+            <button className="p-1.5 w-10 h-10 rounded-full bg-white/90 text-blue-500 hover:bg-blue-500 hover:text-white border border-blue-400 transition">
               ℹ
             </button>
-            <button className="p-1.5 rounded-full bg-white/90 text-red-500 hover:bg-red-500 hover:text-white border border-red-400 transition">
+            <button className="p-1.5 w-10 h-10 rounded-full bg-white/90 text-red-500 hover:bg-red-500 hover:text-white border border-red-400 transition">
               ❌
             </button>
           </div>
@@ -75,7 +75,7 @@ const Trend = () => {
           {/* Ad Text & CTA */}
           <div className="absolute bottom-6 left-0 w-full text-center px-4">
             <p className="text-white text-base md:text-lg font-semibold mb-2 drop-shadow">
-              Get the best car deals of 2025 🚗
+              Get the best deals of 2025 🚗
             </p>
             <button className="bg-red-500 hover:bg-red-600 text-white text-sm md:text-base font-semibold px-6 py-2 rounded-full transition shadow-md">
               Learn More
@@ -95,10 +95,19 @@ const Trend = () => {
           <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
             Sponsored
           </span>
+          {/* Ad Buttons */}
+          <div className="absolute top-3 right-3 flex gap-2">
+            <button className="p-1.5 w-10 h-10 rounded-full bg-white/90 text-blue-500 hover:bg-blue-500 hover:text-white border border-blue-400 transition">
+              ℹ
+            </button>
+            <button className="p-1.5 w-10 h-10 rounded-full bg-white/90 text-red-500 hover:bg-red-500 hover:text-white border border-red-400 transition">
+              ❌
+            </button>
+          </div>
 
           <div className="absolute bottom-4 left-0 w-full text-center px-4">
             <p className="text-white text-sm md:text-base font-medium mb-2 drop-shadow">
-              Discover new car accessories 🛠️
+              Discover new laptop and accessories 🛠️
             </p>
             <button className="bg-blue-500 hover:bg-blue-600 text-white text-xs md:text-sm font-semibold px-5 py-2 rounded-full transition">
               Shop Now
