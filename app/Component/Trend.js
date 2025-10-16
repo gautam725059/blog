@@ -1,11 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import car2 from "../assest/image/car2.jpeg";
 import ad from "../assest/image/ad.jpg";
 import ad2 from "../assest/image/ad2.jpeg";
 
 const Trend = () => {
+  const router = useRouter();
   return (
     <div className="flex flex-col lg:flex-row max-w-[90%] mx-auto px-4 my-10 gap-10">
       {/* ==== Left Section: Blog ==== */}
@@ -39,7 +41,7 @@ const Trend = () => {
           feedback on acceleration, braking, and G-forces.
         </p>
 
-        <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold mt-6 transition-all shadow-md hover:shadow-lg">
+        <button onClick={()=> router.push("/Lblog")} className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold mt-6 transition-all shadow-md hover:shadow-lg">
           Read More
         </button>
       </div>

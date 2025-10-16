@@ -8,25 +8,57 @@ import ad12 from "../assest/image/ad12.webp";
 const Post3 = () => {
   const [showMobileAd1, setShowMobileAd1] = useState(true);
   const [showMobileAd2, setShowMobileAd2] = useState(true);
+  const [showDesktopRightAd, setShowDesktopRightAd] = useState(true);
+  const [showDesktopLeftAd, setShowDesktopLeftAd] = useState(true);
 
   return (
     <div className="relative max-w-4xl mx-auto px-4 py-10 bg-gray-50 min-h-screen">
 
       {/* ======= Desktop Right Ad ======= */}
-      <div className="hidden lg:flex fixed right-10 top-20 w-[200px] h-[700px] rounded-xl overflow-hidden shadow-md z-50">
-        <Image src={ad11} alt="Right Ad" className="w-full h-full" />
-        <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
-          Sponsored
-        </span>
-      </div>
+      {showDesktopRightAd && (
+        <div className="hidden lg:flex fixed right-10 top-20 w-[200px] h-[700px] rounded-xl overflow-hidden shadow-md z-50">
+          <div className="relative w-full h-full">
+            <Image src={ad11} alt="Right Ad" className="w-full h-full object-cover" />
+            <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
+              Sponsored
+            </span>
+
+            {/* Buttons */}
+            <div className="absolute top-3 right-3 flex  gap-2">
+              <button className="p-1.5 w-8 h-8 rounded-full bg-white/90 text-blue-500 hover:bg-blue-500 hover:text-white border border-blue-400 transition">ℹ</button>
+              <button
+                onClick={() => setShowDesktopRightAd(false)}
+                className="p-1.5 w-8 h-8 rounded-full bg-white/90 text-red-500 hover:bg-red-500 hover:text-white border border-red-400 transition"
+              >
+                ❌
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ======= Desktop Left Ad ======= */}
-      <div className="hidden lg:flex fixed left-5 top-20 w-[200px] h-[600px] rounded-xl overflow-hidden shadow-md z-50">
-        <Image src={ad12} alt="Left Ad" className="w-full h-full" />
-        <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
-          Sponsored
-        </span>
-      </div>
+      {showDesktopLeftAd && (
+        <div className="hidden lg:flex fixed left-5 top-20 w-[200px] h-[600px] rounded-xl overflow-hidden shadow-md z-50">
+          <div className="relative w-full h-full">
+            <Image src={ad12} alt="Left Ad" className="w-full h-full object-cover" />
+            <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
+              Sponsored
+            </span>
+
+            {/* Buttons */}
+            <div className="absolute top-3 right-3 flex  gap-2">
+              <button className="p-1.5 w-8 h-8 rounded-full bg-white/90 text-blue-500 hover:bg-blue-500 hover:text-white border border-blue-400 transition">ℹ</button>
+              <button
+                onClick={() => setShowDesktopLeftAd(false)}
+                className="p-1.5 w-8 h-8 rounded-full bg-white/90 text-red-500 hover:bg-red-500 hover:text-white border border-red-400 transition"
+              >
+                ❌
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ======= Blog Section ======= */}
       <div className="lg:mx-20">
@@ -105,10 +137,9 @@ const Post3 = () => {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );
 };
 
-export default Post3;
+export default Post3

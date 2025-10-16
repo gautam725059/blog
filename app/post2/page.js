@@ -6,6 +6,8 @@ import ad11 from "../assest/image/ad11.webp";
 import ad12 from "../assest/image/ad12.webp";
 
 const Post2 = () => {
+  const [showRightAd, setShowRightAd] = useState(true);
+  const [showLeftAd, setShowLeftAd] = useState(true);
   const [showMobileAd1, setShowMobileAd1] = useState(true);
   const [showMobileAd2, setShowMobileAd2] = useState(true);
 
@@ -13,24 +15,51 @@ const Post2 = () => {
     <div className="relative max-w-4xl mx-auto px-4 py-10 bg-gray-50 min-h-screen">
 
       {/* ======= Desktop Right Ad ======= */}
-      <div className="hidden lg:flex fixed right-5 top-20 w-[200px] h-[700px] rounded-xl overflow-hidden shadow-md z-50">
-        <Image src={ad11} alt="Right Ad" className="w-full h-full" />
-        <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
-          Sponsored
-        </span>
-      </div>
+      {showRightAd && (
+        <div className="hidden lg:flex fixed right-5 top-20 w-[200px] h-[700px] rounded-xl overflow-hidden shadow-md z-50">
+          <Image src={ad11} alt="Right Ad" className="w-full h-full" />
+          <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
+            Sponsored
+          </span>
+          {/* Info and Close Buttons */}
+          <div className="absolute top-3 right-3 flex  gap-2">
+            <button className="p-1.5 w-8 h-8 rounded-full bg-white/90 text-blue-500 hover:bg-blue-500 hover:text-white border border-blue-400 transition text-sm">
+              ℹ
+            </button>
+            <button
+              onClick={() => setShowRightAd(false)}
+              className="p-1.5 w-8 h-8 rounded-full bg-white/90 text-red-500 hover:bg-red-500 hover:text-white border border-red-400 transition text-sm"
+            >
+              ❌
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* ======= Desktop Left Ad ======= */}
-      <div className="hidden lg:flex fixed left-5 top-20 w-[200px] h-[600px] rounded-xl overflow-hidden shadow-md z-50">
-        <Image src={ad12} alt="Left Ad" className="w-full h-full" />
-        <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
-          Sponsored
-        </span>
-      </div>
+      {showLeftAd && (
+        <div className="hidden lg:flex fixed left-5 top-20 w-[200px] h-[600px] rounded-xl overflow-hidden shadow-md z-50">
+          <Image src={ad12} alt="Left Ad" className="w-full h-full" />
+          <span className="absolute top-3 left-3 bg-yellow-400 text-gray-900 text-xs font-semibold px-2 py-1 rounded-full shadow">
+            Sponsored
+          </span>
+          {/* Info and Close Buttons */}
+          <div className="absolute top-3 right-3 flex  gap-2">
+            <button className="p-1.5 w-8 h-8 rounded-full bg-white/90 text-blue-500 hover:bg-blue-500 hover:text-white border border-blue-400 transition text-sm">
+              ℹ
+            </button>
+            <button
+              onClick={() => setShowLeftAd(false)}
+              className="p-1.5 w-8 h-8 rounded-full bg-white/90 text-red-500 hover:bg-red-500 hover:text-white border border-red-400 transition text-sm"
+            >
+              ❌
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* ======= Blog Section ======= */}
       <div className="lg:mx-20">
-
         {/* Blog Image */}
         <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
           <Image
@@ -62,18 +91,15 @@ const Post2 = () => {
           </div>
         )}
 
-        {/* Blog Content */}
+        {/* ======= Blog Content ======= */}
         <div className="mt-8 bg-white p-6 rounded-xl shadow-sm space-y-5">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
             The Enduring Allure of the Modern Muscle Car
           </h1>
-
           <p className="text-gray-600 text-sm md:text-base">
             By <span className="text-red-600 font-semibold">Gautam Gupta</span> | March 18, 2024
           </p>
-
           <hr className="border-gray-300 my-4" />
-
           <p className="text-gray-700 leading-relaxed text-base md:text-lg">
             The image captures the essence of raw power&mdash;a sleek, black muscle car&hellip;
           </p>
@@ -105,7 +131,6 @@ const Post2 = () => {
             </div>
           </div>
         )}
-
       </div>
     </div>
   );
